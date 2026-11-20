@@ -1,28 +1,7 @@
 ---
-import BMFooter from '../components/bmFooter.astro';
-import BMHeader from '../components/bmHeader.astro';
-import '../styles/global.css';
-
-const companyTitle = "B-Melon Co. Limited"
-const companyDescription = "Welcome to B-Melon Co. Limited"
+import BMBaseLayout from '../layouts/bmBaseLayout.astro';
+const pageTitle = "Home Page";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width" />
-		<title>{companyTitle}</title>
-		<style>
-			h1 {
-				color: #7c3aed;
-			}
-		</style>
-  </head>
-	<body>
-		<BMHeader />
-		<h1>{companyTitle}</h1>
-		<p>{companyDescription}</p>
-		<BMFooter />
-	</body>
-	
-</html>
+<BMBaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BMBaseLayout>
